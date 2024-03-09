@@ -1,7 +1,34 @@
+// import React, { useState } from "react";
+// import "./Header.css";
+
+// const Header = () => {
+//   const [searchTerm, setSearchTerm] = useState('');
+
+//   const handleInputChange = (e) => {
+//     setSearchTerm(e.target.value);
+//   };
+
+//   const handleSearch = async (e) => {
+//     e.preventDefault(); // Prevent the form from causing a page reload
+//     try {
+//       const response = await fetch(`http://127.0.0.1:5000/search?search_term=${encodeURIComponent(searchTerm)}`, {
+//         method: 'GET',
+//       });
+//       const data = await response.json();
+//       console.log(data); // Process the data as needed
+//     } catch (error) {
+//       console.error("Error fetching search results:", error);
+//     }
+//   };
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ setSearchTerm }) => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    const searchTerm = e.target.elements.search.value; // Get the search term from the input field
+    setSearchTerm(searchTerm); // Update the searchTerm in the App component
+  };
   return (
     <header>
       <div class="header-top">
@@ -59,18 +86,19 @@ const Header = () => {
             {/* <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36"> */}
           </a>
 
-          <div class="header-search-container">
-            <input
-              type="search"
-              name="search"
-              className="search-field"
-              placeholder="Enter your product name..."
-            />
-
-            <button class="search-btn">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
-          </div>
+          <div className="header-search-container">
+        <form onSubmit={handleSearch}>
+          <input
+            type="search"
+            name="search"
+            className="search-field"
+            placeholder="Enter your product name..."
+          />
+          <button className="search-btn" type="submit">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </form>
+      </div>
 
           <div class="header-user-actions">
             <button class="action-btn">

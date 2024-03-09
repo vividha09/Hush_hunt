@@ -3,6 +3,7 @@ import "./Header.css";
 import Shop from "../images/h1.png";
 import Shop2 from "../images/h4.png";
 import Shop3 from "../images/h5.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -26,9 +27,10 @@ const Banner = () => {
                   starting at &dollar; <b>20</b>.00
                 </p>
 
-                <a href="#" class="banner-btn">
+                {/* <a href="#" class="banner-btn">
                   Shop now
-                </a>
+                </a> */}
+                <Link to="/products" class="banner-btn">Shop Now</Link>
               </div>
             </div>
 
