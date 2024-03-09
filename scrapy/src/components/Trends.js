@@ -32,14 +32,14 @@ const Trends = () => {
 
                 <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
 
-                <a href="#" class="btn btn-link">
+                <Link to="/products" class="btn btn-link">
                   <span>Shop Now</span>
 
                   <ion-icon
                     name="arrow-forward-outline"
                     aria-hidden="true"
                   ></ion-icon>
-                </a>
+                </Link>
               </div>
             </li>
 

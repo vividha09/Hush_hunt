@@ -5,6 +5,7 @@ import Trends from "./components/Trends";
 import Product from "./components/Product";
 import Footer from "./components/Footer";
 import Calendar from "./components/Calendar";
+import Products from "./components/Products";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -36,6 +37,7 @@ const App = () => {
             }
           />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </div>
     </Router>
