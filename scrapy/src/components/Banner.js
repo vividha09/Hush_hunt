@@ -1,5 +1,8 @@
 import React from "react";
 import "./Header.css";
+import Shop from "../images/h1.png";
+import Shop2 from "../images/h4.png";
+import Shop3 from "../images/h5.png";
 
 const Banner = () => {
   return (
@@ -8,7 +11,11 @@ const Banner = () => {
         <div class="container">
           <div class="slider-container has-scrollbar">
             <div class="slider-item">
-              {/* <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img"> */}
+              <img
+                src={Shop}
+                alt="women's latest fashion sale"
+                class="banner-img"
+              />
 
               <div class="banner-content">
                 <p class="banner-subtitle">Hot Offers</p>
@@ -26,7 +33,11 @@ const Banner = () => {
             </div>
 
             <div class="slider-item">
-              {/* <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img"> */}
+              <img
+                src={Shop2}
+                alt="women's latest fashion sale"
+                class="banner-img"
+              />
 
               <div class="banner-content">
                 <p class="banner-subtitle">Trending accessories</p>
@@ -44,7 +55,11 @@ const Banner = () => {
             </div>
 
             <div class="slider-item">
-              {/* <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img"> */}
+              <img
+                src={Shop3}
+                alt="new fashion summer sale"
+                class="banner-img"
+              />
 
               <div class="banner-content">
                 <p class="banner-subtitle">Sale Offer</p>

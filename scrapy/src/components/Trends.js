@@ -1,17 +1,33 @@
 import React from "react";
 import "./Trends.css";
+import H2 from "../images/H2.jpg";
+import H3 from "../images/H3.jpg";
+import { Link } from "react-router-dom";
 
 const Trends = () => {
   return (
     <header>
+      <div className="tagline">
+        <h2 className="tagline-text">SHOP WITH CONFIDENCE</h2>
+      </div>
+
+      <div className="tagline">
+        <h2 className="tagline-text2">Let us take care of your </h2>
+      </div>
       <section class="section cta">
         <div class="container">
           <ul class="cta-list">
             <li>
               <div
                 class="cta-card"
-                // style="background-image: url('./assets/images/cta-1.jpg')"
+                // style="background-image: url('./images/H2.jpg')"
+                style={{ backgroundImage: `url(${H2})` }}
               >
+                {/* <img
+                  src={H2}
+                  alt="women's latest fashion sale"
+                  class="cta-card"
+                /> */}
                 <p class="card-subtitle">Adidas Shoes</p>
 
                 <h3 class="h2 card-title">The Summer Sale Off 50%</h3>
@@ -28,22 +44,18 @@ const Trends = () => {
             </li>
 
             <li>
-              <div
-                class="cta-card"
-                // style="background-image: url('./assets/images/cta-2.jpg')"
-              >
-                <p class="card-subtitle">Nike Shoes</p>
+              <div class="cta-card" style={{ backgroundImage: `url(${H3})` }}>
+                <p class="card-subtitle">SALE</p>
 
-                <h3 class="h2 card-title">Makes Yourself Keep Sporty</h3>
+                <h3 class="h2 card-title">Get sales calender!</h3>
 
-                <a href="#" class="btn btn-link">
-                  <span>Shop Now</span>
-
+                <Link to="/calendar" class="btn btn-link">
+                  <span>Click Here</span>
                   <ion-icon
                     name="arrow-forward-outline"
                     aria-hidden="true"
                   ></ion-icon>
-                </a>
+                </Link>
               </div>
             </li>
           </ul>
