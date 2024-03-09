@@ -1,4 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import jacketImage from "../images/products/jacket-3.jpg";
+import jacketImage1 from "../images/products/jacket-4.jpg";
+import shirt from "../images/products/shirt-1.jpg";
+import shirt1 from "../images/products/shirt-2.jpg";
 
 const Products = () => {
   return (
@@ -11,12 +15,17 @@ const Products = () => {
           <div class="showcase">
             <div class="showcase-banner">
               <img
-                src="./images/products/jacket-3.jpg"
+                src={jacketImage}
                 alt="Mens Winter Leathers Jackets"
                 width="300"
                 class="product-img default"
               />
-              {/* <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover"> */}
+              <img
+                src={jacketImage1}
+                alt="Mens Winter Leathers Jackets"
+                width="300"
+                class="product-img hover"
+              />
 
               <p class="showcase-badge">15%</p>
 
@@ -65,8 +74,18 @@ const Products = () => {
 
           <div class="showcase">
             <div class="showcase-banner">
-              {/* <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300"> */}
-              {/* <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300"> */}
+              <img
+                src={shirt}
+                alt="Pure Garment Dyed Cotton Shirt"
+                class="product-img default"
+                width="300"
+              />
+              <img
+                src={shirt1}
+                alt="Pure Garment Dyed Cotton Shirt"
+                class="product-img hover"
+                width="300"
+              />
 
               <p class="showcase-badge angle black">sale</p>
 
