@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    {% if product %}
+        <h1>{{ product.title or 'N/A' }}</h1>
+        <p>Rating: {{ product.rating or 'N/A' }}</p>
+        <p>Reviews: {{ product.reviews or 'N/A' }}</p>
+        <p>Description: {{ product.description or 'N/A' }}</p>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</body>
+</html>

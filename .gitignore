@@ -1,0 +1,5 @@
+# Ignore loc directory
+loc/
+
+# Ignore power directory
+power/
