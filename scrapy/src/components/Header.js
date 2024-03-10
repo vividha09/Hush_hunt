@@ -29,6 +29,9 @@ const Header = ({ setSearchTerm }) => {
     const searchTerm = e.target.elements.search.value; // Get the search term from the input field
     setSearchTerm(searchTerm); // Update the searchTerm in the App component
   };
+  const handleMenuItemClick = (term) => {
+    setSearchTerm(term); // Set the searchTerm with the clicked term
+  };
   return (
     <header>
       <div class="header-top">
@@ -138,25 +141,18 @@ const Header = ({ setSearchTerm }) => {
                     <a href="#">Electronics</a>
                   </li>
 
-                  <li class="panel-list-item">
-                    <a href="#">Desktop</a>
-                  </li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Desktop')}>Desktop</li>
 
-                  <li class="panel-list-item">
-                    <a href="#">Laptop</a>
-                  </li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Laptop')}>Laptop</li>
 
-                  <li class="panel-list-item">
-                    <a href="#">Camera</a>
-                  </li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Camera')}>Camera</li>
+                  
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Tablet')}>Tablet</li>
 
-                  <li class="panel-list-item">
-                    <a href="#">Tablet</a>
-                  </li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Headphone')}>Headphone</li>
+                  
 
-                  <li class="panel-list-item">
-                    <a href="#">Headphone</a>
-                  </li>
+                 
 
                   <li class="panel-list-item">
                     <a href="#">
@@ -166,29 +162,17 @@ const Header = ({ setSearchTerm }) => {
                 </ul>
 
                 <ul class="dropdown-panel-list">
+                  
                   <li class="menu-title">
                     <a href="#">Men's</a>
                   </li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens formal')}>Formal</li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens casual')}>Casual</li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens sports')}>Sports</li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens jacket')}>Jacket</li>
+                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens sunglasses')}>Sunglassses</li>
 
-                  <li class="panel-list-item">
-                    <a href="#">Formal</a>
-                  </li>
-
-                  <li class="panel-list-item">
-                    <a href="#">Casual</a>
-                  </li>
-
-                  <li class="panel-list-item">
-                    <a href="#">Sports</a>
-                  </li>
-
-                  <li class="panel-list-item">
-                    <a href="#">Jacket</a>
-                  </li>
-
-                  <li class="panel-list-item">
-                    <a href="#">Sunglasses</a>
-                  </li>
+                 
 
                   <li class="panel-list-item">
                     <a href="#">
