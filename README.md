@@ -26,3 +26,5 @@ Our platform revolutionizes online shopping by seamlessly aggregating product da
 
 ![Screenshot (283)](https://github.com/vividha09/LOC_6.0/assets/110150230/50dd6e23-80e3-46ca-8b0a-e62e6dca69ca)
 
+![Screenshot (282)](https://github.com/vividha09/LOC_6.0/assets/110150230/54f0246d-ff03-47a8-8237-6c7d834969a9)
+
