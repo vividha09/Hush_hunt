@@ -23,14 +23,14 @@ const Banner = () => {
 
                 <h2 class="banner-title">Women's latest fashion sale</h2>
 
-                <p class="banner-text">
-                  starting at &dollar; <b>20</b>.00
-                </p>
+                <p class="banner-text">No reason sale is live!</p>
 
                 {/* <a href="#" class="banner-btn">
                   Shop now
                 </a> */}
-                <Link to="/products" class="banner-btn">Shop Now</Link>
+                <Link to="/products" class="banner-btn">
+                  Shop Now
+                </Link>
               </div>
             </div>
 
@@ -44,15 +44,13 @@ const Banner = () => {
               <div class="banner-content">
                 <p class="banner-subtitle">Trending accessories</p>
 
-                <h2 class="banner-title">Modern sunglasses</h2>
+                <h2 class="banner-title">Daily life essentials and more!</h2>
 
-                <p class="banner-text">
-                  starting at &dollar; <b>15</b>.00
-                </p>
+                <p class="banner-text">Visualise befor purchasing</p>
 
-                <a href="#" class="banner-btn">
-                  Shop now
-                </a>
+                <Link to="/arvr" class="banner-btn">
+                  Try AR
+                </Link>
               </div>
             </div>
 

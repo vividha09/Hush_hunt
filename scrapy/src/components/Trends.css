@@ -102,3 +102,13 @@
   font-weight: 100;
   font-style: normal;
 }
+
+.product-featured {
+  text-align: center; /* Center align the content inside */
+}
+
+.title {
+  margin-bottom: 20px; /* Add some space below the title for better aesthetics */
+  margin-top: 20px;
+  font-size: 30px;
+}

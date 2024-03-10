@@ -361,7 +361,7 @@ const Product = ({ product }) => {
             <img src={price.seller_logo} alt="Seller" className="seller-logo" />
             <div>
               <p>Price: {price.price}</p>
-              <p>Discount: {price.discount ? price.discount : 'N/A'}</p>
+              <p>Discount: {price.discount ? price.discount : "N/A"}</p>
             </div>
           </div>
         ))}
@@ -371,5 +371,3 @@ const Product = ({ product }) => {
 };
 
 export default Product;
-
-

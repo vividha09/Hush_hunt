@@ -22,6 +22,7 @@
 //   };
 import React from "react";
 import "./Header.css";
+import logo from "../images/logo.png";
 
 const Header = ({ setSearchTerm }) => {
   const handleSearch = async (e) => {
@@ -70,15 +71,16 @@ const Header = ({ setSearchTerm }) => {
           </div>
 
           <div class="header-top-actions">
-            <select name="currency">
+            {/* <select name="currency">
               <option value="usd">USD &dollar;</option>
               <option value="eur">EUR &euro;</option>
-            </select>
+            </select> */}
 
             <select name="language">
               <option value="en-US">English</option>
               <option value="es-ES">Espa&ntilde;ol</option>
               <option value="fr">Fran&ccedil;ais</option>
+              <option value="fr">Hindi</option>
             </select>
           </div>
         </div>
@@ -86,24 +88,24 @@ const Header = ({ setSearchTerm }) => {
       <div class="header-main">
         <div class="container">
           <a href="#" class="header-logo">
-            {/* <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36"> */}
+            <img src={logo} alt="Anon's logo" width="120" height="36" />
           </a>
 
           <div className="header-search-container">
-        <form onSubmit={handleSearch}>
-          <input
-            type="search"
-            name="search"
-            className="search-field"
-            placeholder="Enter your product name..."
-          />
-          <button className="search-btn" type="submit">
-            <ion-icon name="search-outline"></ion-icon>
-          </button>
-        </form>
-      </div>
+            <form onSubmit={handleSearch}>
+              <input
+                type="search"
+                name="search"
+                className="search-field"
+                placeholder="Enter your product name..."
+              />
+              <button className="search-btn" type="submit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
 
-          <div class="header-user-actions">
+          {/* <div class="header-user-actions">
             <button class="action-btn">
               <ion-icon name="person-outline"></ion-icon>
             </button>
@@ -117,7 +119,7 @@ const Header = ({ setSearchTerm }) => {
               <ion-icon name="bag-handle-outline"></ion-icon>
               <span class="count">0</span>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -141,18 +143,40 @@ const Header = ({ setSearchTerm }) => {
                     <a href="#">Electronics</a>
                   </li>
 
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Desktop')}>Desktop</li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Desktop")}
+                  >
+                    Desktop
+                  </li>
 
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Laptop')}>Laptop</li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Laptop")}
+                  >
+                    Laptop
+                  </li>
 
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Camera')}>Camera</li>
-                  
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Tablet')}>Tablet</li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Camera")}
+                  >
+                    Camera
+                  </li>
 
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Headphone')}>Headphone</li>
-                  
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Tablet")}
+                  >
+                    Tablet
+                  </li>
 
-                 
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Headphone")}
+                  >
+                    Headphone
+                  </li>
 
                   <li class="panel-list-item">
                     <a href="#">
@@ -162,17 +186,39 @@ const Header = ({ setSearchTerm }) => {
                 </ul>
 
                 <ul class="dropdown-panel-list">
-                  
                   <li class="menu-title">
                     <a href="#">Men's</a>
                   </li>
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens formal')}>Formal</li>
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens casual')}>Casual</li>
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens sports')}>Sports</li>
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens jacket')}>Jacket</li>
-                  <li className="panel-list-item" onClick={() => handleMenuItemClick('Mens sunglasses')}>Sunglassses</li>
-
-                 
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Mens formal")}
+                  >
+                    Formal
+                  </li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Mens casual")}
+                  >
+                    Casual
+                  </li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Mens sports")}
+                  >
+                    Sports
+                  </li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Mens jacket")}
+                  >
+                    Jacket
+                  </li>
+                  <li
+                    className="panel-list-item"
+                    onClick={() => handleMenuItemClick("Mens sunglasses")}
+                  >
+                    Sunglassses
+                  </li>
 
                   <li class="panel-list-item">
                     <a href="#">

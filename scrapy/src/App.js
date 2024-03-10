@@ -8,9 +8,10 @@ import Products from "./components/Products";
 import PowerBIReport from "./components/PowerBIReport";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Arvr from "./components/Arvr";
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     alanBtn({
@@ -29,14 +30,21 @@ const App = () => {
         <Banner />
         <PowerBIReport />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Trends />
-              <Footer />
-            </>
-          }/>
+          <Route
+            path="/"
+            element={
+              <>
+                <Trends />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/arvr" element={<Arvr />} />
           <Route path="/calendar" element={<Calendar />} />
-          <Route path="/products" element={<Products searchTerm={searchTerm} />} />
+          <Route
+            path="/products"
+            element={<Products searchTerm={searchTerm} />}
+          />
         </Routes>
       </div>
     </Router>
