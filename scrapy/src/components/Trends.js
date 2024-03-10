@@ -96,23 +96,21 @@ const Trends = () => {
                   </div>
 
                   <a href="#">
-                    <h3 class="showcase-title">
-                      shampoo, conditioner & facewash packs
-                    </h3>
+                    <h3 class="showcase-title">MamaEarth mosturizer</h3>
                   </a>
 
                   <p class="showcase-desc">
-                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
-                    dolor sit amet consectetur Lorem ipsum dolor
+                    Enjoy up to 10% off Mamaearth Skin & Hair Care products
+                    during the Mamaearth lightning sale.
                   </p>
 
                   <div class="price-box">
-                    <p class="price">$150.00</p>
+                    <p class="price">625.00/-</p>
 
-                    <del>$200.00</del>
+                    <del>700.00</del>
                   </div>
 
-                  <button class="add-cart-btn">add to cart</button>
+                  {/* <button class="add-cart-btn">add to cart</button> */}
 
                   <div class="showcase-status">
                     <div class="wrapper">
@@ -133,13 +131,13 @@ const Trends = () => {
 
                     <div class="countdown">
                       <div class="countdown-content">
-                        <p class="display-number">360</p>
+                        <p class="display-number">2</p>
 
                         <p class="display-text">Days</p>
                       </div>
 
                       <div class="countdown-content">
-                        <p class="display-number">24</p>
+                        <p class="display-number">12</p>
                         <p class="display-text">Hours</p>
                       </div>
 
@@ -149,7 +147,7 @@ const Trends = () => {
                       </div>
 
                       <div class="countdown-content">
-                        <p class="display-number">00</p>
+                        <p class="display-number">07</p>
                         <p class="display-text">Sec</p>
                       </div>
                     </div>
@@ -189,11 +187,11 @@ const Trends = () => {
                   </p>
 
                   <div class="price-box">
-                    <p class="price">$1990.00</p>
-                    <del>$2000.00</del>
+                    <p class="price">18,900.00/-</p>
+                    <del>20,000.00</del>
                   </div>
 
-                  <button class="add-cart-btn">add to cart</button>
+                  {/* <button class="add-cart-btn">add to cart</button> */}
 
                   <div class="showcase-status">
                     <div class="wrapper">
@@ -204,7 +202,7 @@ const Trends = () => {
 
                       <p>
                         {" "}
-                        available: <b>40</b>{" "}
+                        available: <b>10</b>{" "}
                       </p>
                     </div>
 
@@ -216,12 +214,12 @@ const Trends = () => {
 
                     <div class="countdown">
                       <div class="countdown-content">
-                        <p class="display-number">360</p>
+                        <p class="display-number">1</p>
                         <p class="display-text">Days</p>
                       </div>
 
                       <div class="countdown-content">
-                        <p class="display-number">24</p>
+                        <p class="display-number">20</p>
                         <p class="display-text">Hours</p>
                       </div>
 
@@ -231,7 +229,7 @@ const Trends = () => {
                       </div>
 
                       <div class="countdown-content">
-                        <p class="display-number">00</p>
+                        <p class="display-number">27</p>
                         <p class="display-text">Sec</p>
                       </div>
                     </div>
