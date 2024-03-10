@@ -5,8 +5,8 @@ Our platform revolutionizes online shopping by seamlessly aggregating product da
 
 ## ✨ Our USPs
 
-1. *Integrated Chatbot:* 
-   - Developed a chatbot capable of answering queries related to AI analytics.
+1. *Real time product comparison:* 
+   - Designed a product vision focused on competitor analysis, which involves scanning Zomato/Swiggy pages of competitors to list their strengths and weaknesses.
    
 2. *Scalable Data Analytics:* 
    - Implemented scalable data analytics solutions using PowerBI on Webscraped data.
@@ -14,8 +14,8 @@ Our platform revolutionizes online shopping by seamlessly aggregating product da
 3. *Custom Data Visualization:* 
    - Enabled users to request specific data visualizations on our website using their CSV files.
    
-4. *Product Vision for Competitor Analysis:* 
-   - Designed a product vision focused on competitor analysis, which involves scanning Zomato/Swiggy pages of competitors to list their strengths and weaknesses.
+4. *Integrated Chatbot:* 
+   - Developed a chatbot capable of answering queries related to AI analytics.
    
 5. *Enhanced User Experience:* 
    - Implemented auto-suggest and auto-complete features for user search queries, enhancing the overall user experience.
