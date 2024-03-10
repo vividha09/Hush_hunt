@@ -1,5 +1,24 @@
-# LOC_6.0
 
+# Hush Hunt
+
+Our platform revolutionizes online shopping by seamlessly aggregating product data from various e-commerce sites, empowering users with intuitive search, comparison, and analysis tools, ultimately ensuring informed purchasing decisions and an enhanced shopping experience.
+
+## ✨ Our USPs
+
+1. *Integrated Chatbot:* 
+   - Developed a chatbot capable of answering queries related to AI analytics.
+   
+2. *Scalable Data Analytics:* 
+   - Implemented scalable data analytics solutions using PowerBI on Webscraped data.
+   
+3. *Custom Data Visualization:* 
+   - Enabled users to request specific data visualizations on our website using their CSV files.
+   
+4. *Product Vision for Competitor Analysis:* 
+   - Designed a product vision focused on competitor analysis, which involves scanning Zomato/Swiggy pages of competitors to list their strengths and weaknesses.
+   
+5. *Enhanced User Experience:* 
+   - Implemented auto-suggest and auto-complete features for user search queries, enhancing the overall user experience.
 
 
 # 💻 Tech Stack:
